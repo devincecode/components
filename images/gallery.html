@@ -1,0 +1,106 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <style>
+      .de-image-gallery, .de-image-gallery__orientation--square {
+        width: 450px;
+      }
+      .de-image-gallery__stage img {
+        width: 100%;
+        height: 450px;
+      }
+      .de-image-gallery__chair {
+        width: 120px;
+        height: 120px;
+      }
+      .de-image-gallery__chairs {
+        display: flex;
+        gap: 12px;
+        overflow: auto;
+        margin-top: 12px;
+      }
+
+
+      .de-image-gallery__orientation--portrait {
+
+      }
+      .de-image-gallery__orientation--portrait .de-image-gallery__stage img {
+        height: 600px;
+      }
+
+      .de-image-gallery__orientation--portrait .de-image-gallery__chair {
+        width: 120px;
+        height: 180px;
+      }
+
+ 
+      .de-image-gallery__orientation--landscape {
+
+      }
+      .de-image-gallery__orientation--landscape .de-image-gallery__stage img {
+        height: 300px;
+      }
+
+      .de-image-gallery__orientation--landscape .de-image-gallery__chair {
+        width: 180px;
+        height: 120px;
+      }
+
+     
+      
+    </style>
+
+    <!-- Default orientation is square -->
+    <h1>Image gallery square/default</h1>
+
+    <div class="de-image-gallery">
+      <div class="de-image-gallery__stage">
+        <img src="" alt="stage">
+      </div>
+      <div class="de-image-gallery__chairs">
+        <img src="" alt="chair-1" class="de-image-gallery__chair">
+        <img src="" alt="chair-2" class="de-image-gallery__chair">
+        <img src="" alt="chair-3" class="de-image-gallery__chair">
+        <img src="" alt="chair-4" class="de-image-gallery__chair">
+        <img src="" alt="chair-5" class="de-image-gallery__chair">
+        <img src="" alt="chair-6" class="de-image-gallery__chair">
+        <img src="" alt="chair-7" class="de-image-gallery__chair">
+      </div>
+    </div>
+
+    <h1>Image gallery portrait</h1>
+    <div class="de-image-gallery de-image-gallery__orientation--portrait">
+      <div class="de-image-gallery__stage">
+        <img src="" alt="stage">
+      </div>
+      <div class="de-image-gallery__chairs">
+        <img src="" alt="chair-1" class="de-image-gallery__chair">
+        <img src="" alt="chair-2" class="de-image-gallery__chair">
+        <img src="" alt="chair-3" class="de-image-gallery__chair">
+        <img src="" alt="chair-4" class="de-image-gallery__chair">
+        <img src="" alt="chair-5" class="de-image-gallery__chair">
+        <img src="" alt="chair-6" class="de-image-gallery__chair">
+        <img src="" alt="chair-7" class="de-image-gallery__chair">
+      </div>
+    </div>
+
+    <h1>Image gallery landscape</h1>
+    <div class="de-image-gallery de-image-gallery__orientation--landscape">
+      <div class="de-image-gallery__stage">
+        <img src="" alt="stage">
+      </div>
+      <div class="de-image-gallery__chairs">
+        <img src="" alt="chair-1" class="de-image-gallery__chair">
+        <img src="" alt="chair-2" class="de-image-gallery__chair">
+        <img src="" alt="chair-3" class="de-image-gallery__chair">
+        <img src="" alt="chair-4" class="de-image-gallery__chair">
+        <img src="" alt="chair-5" class="de-image-gallery__chair">
+        <img src="" alt="chair-6" class="de-image-gallery__chair">
+        <img src="" alt="chair-7" class="de-image-gallery__chair">
+      </div>
+    </div>
+
+
+  </body>
+</html>
