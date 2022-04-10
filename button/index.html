@@ -31,10 +31,16 @@
       :root {
         --btn-primary-color: #fff;
         --btn-primary-bg: #2020e1;
+        --btn-secondary-color: #fff;
+        --btn-secondary-bg: #878787;
       }
       button.de-button.de-button__color--primary {
         color: var(--btn-primary-color);
         background-color: var(--btn-primary-bg);
+      }
+      button.de-button.de-button__color--secondary{
+        color: var(--btn-secondary-color);
+        background-color: var(--btn-secondary-bg);
       }
 
     </style>
@@ -66,5 +72,6 @@
 
     <h4>Colors</h4>
     <button class="de-button de-button__color--primary">Primary</button>
+    <button class="de-button de-button__color--secondary">Secondary</button>
   </body>
 </html>
