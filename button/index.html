@@ -27,6 +27,16 @@
       button.de-button.de-button--br-12 {
         border-radius: 12px;
       }
+
+      :root {
+        --btn-primary-color: #fff;
+        --btn-primary-bg: #2020e1;
+      }
+      button.de-button.de-button__color--primary {
+        color: var(--btn-primary-color);
+        background-color: var(--btn-primary-bg);
+      }
+
     </style>
 
     <h4>Basic</h4>
@@ -53,5 +63,8 @@
     <button class="de-button de-button--pill">Pill</button>
     <button class="de-button de-button--br-6">Radius 6</button>
     <button class="de-button de-button--br-12">Radius 12</button>
+
+    <h4>Colors</h4>
+    <button class="de-button de-button__color--primary">Primary</button>
   </body>
 </html>
