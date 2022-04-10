@@ -7,6 +7,10 @@
         padding: 12px 24px;
         width: 150px;
         border: none;
+        cursor: pointer;
+      }
+      button.de-button:disabled {
+        cursor: initial;
       }
       button.de-button.de-button--pill {
         border-radius: 24px;
@@ -73,5 +77,9 @@
     <h4>Colors</h4>
     <button class="de-button de-button__color--primary">Primary</button>
     <button class="de-button de-button__color--secondary">Secondary</button>
+
+    <h4>Disabled</h4>
+    <button class="de-button de-button__color--primary" disabled>Disabled Primary</button>
+    <button class="de-button de-button__color--secondary" disabled>Disabled Secondary</button>
   </body>
 </html>
