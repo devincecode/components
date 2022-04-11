@@ -115,10 +115,10 @@
       }
 
       button.de-button.de-button__outline {
+        color: initial;
         border: 1px solid;
       }
       button.de-button.de-button__outline.de-button__color--primary {
-        color: initial;
         border-color: var(--btn-primary-bg);
         background-color: transparent;
       }
@@ -132,6 +132,65 @@
         border-color: var(--btn-primary-disabled);
         background-color: var(--btn-outline-disabled-bg);
       }
+      button.de-button.de-button__outline.de-button__color--secondary {
+        border-color: var(--btn-secondary-bg);
+        background-color: transparent;
+      }
+      button.de-button.de-button__outline.de-button__color--secondary:hover {
+        color: var(--btn-secondary-color);
+        border-color: var(--btn-secondary-hover);
+        background-color: var(--btn-secondary-hover);
+      }
+      button.de-button.de-button__outline.de-button__color--secondary:disabled{
+        color: var(--btn-disabled-color);
+        border-color: var(--btn-secondary-disabled);
+        background-color: var(--btn-outline-secondary-bg);
+      }
+      button.de-button.de-button__outline.de-button__color--success {
+        border-color: var(--btn-success-bg);
+        background-color: transparent;
+      }
+      button.de-button.de-button__outline.de-button__color--success:hover {
+        color: var(--btn-success-color);
+        border-color: var(--btn-success-hover);
+        background-color: var(--btn-success-hover);
+      }
+      button.de-button.de-button__outline.de-button__color--success:disabled{
+        color: var(--btn-disabled-color);
+        border-color: var(--btn-success-disabled);
+        background-color: var(--btn-outline-success-bg);
+      }
+      button.de-button.de-button__outline.de-button__color--warning {
+        border-color: var(--btn-warning-bg);
+        background-color: transparent;
+      }
+      button.de-button.de-button__outline.de-button__color--warning:hover {
+        color: var(--btn-warning-color);
+        border-color: var(--btn-warning-hover);
+        background-color: var(--btn-warning-hover);
+      }
+      button.de-button.de-button__outline.de-button__color--warning:disabled{
+        color: var(--btn-disabled-color);
+        border-color: var(--btn-warning-disabled);
+        background-color: var(--btn-outline-warning-bg);
+      }
+      button.de-button.de-button__outline.de-button__color--error {
+        border-color: var(--btn-error-bg);
+        background-color: transparent;
+      }
+      button.de-button.de-button__outline.de-button__color--error:hover {
+        color: var(--btn-error-color);
+        border-color: var(--btn-error-hover);
+        background-color: var(--btn-error-hover);
+      }
+      button.de-button.de-button__outline.de-button__color--error:disabled{
+        color: var(--btn-disabled-color);
+        border-color: var(--btn-error-disabled);
+        background-color: var(--btn-outline-error-bg);
+      }
+
+
+
 
     </style>
 
@@ -188,6 +247,20 @@
     <br><br>
     <button class="de-button de-button__outline de-button__color--primary">Outline Primary</button>
     <button class="de-button de-button__outline de-button__color--primary" disabled >Outline Primary Disabled</button>
+    <br><br>
+    <button class="de-button de-button__outline de-button__color--secondary">Outline Secondary</button>
+    <button class="de-button de-button__outline de-button__color--secondary" disabled >Outline Secondary Disabled</button>
+    <br><br>
+    <button class="de-button de-button__outline de-button__color--success">Outline Success</button>
+    <button class="de-button de-button__outline de-button__color--success" disabled >Outline Success Disabled</button>
+    <br><br>
+    <button class="de-button de-button__outline de-button__color--warning">Outline Warning</button>
+    <button class="de-button de-button__outline de-button__color--warning" disabled >Outline Warning Disabled</button>
+    <br><br>
+    <button class="de-button de-button__outline de-button__color--error">Outline Error</button>
+    <button class="de-button de-button__outline de-button__color--error" disabled >Outline Error Disabled</button>
+
+
 
 
   </body>
