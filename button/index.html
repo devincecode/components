@@ -35,8 +35,24 @@
       :root {
         --btn-primary-color: #fff;
         --btn-primary-bg: #2020e1;
+        --btn-primary-hover: #0f0fff;
+        --btn-primary-disabled: #a8a8f0;
         --btn-secondary-color: #fff;
         --btn-secondary-bg: #878787;
+        --btn-secondary-hover: #808080;
+        --btn-secondary-disabled: #ccc;
+        --btn-success-color: #fff;
+        --btn-success-bg: #2cdb6a;
+        --btn-success-hover: #54e186;
+        --btn-success-disabled: #7faf90;
+        --btn-warning-color: #fff;
+        --btn-warning-bg: #b1c700;
+        --btn-warning-hover: #c0d136;
+        --btn-warning-disabled: #b8c364;
+        --btn-error-color: #fff;
+        --btn-error-bg: #d53232;
+        --btn-error-hover: #d54140;
+        --btn-error-disabled: #d56565;
       }
 
       button.de-button.de-button__color--primary {
@@ -44,21 +60,54 @@
         background-color: var(--btn-primary-bg);
       }
       button.de-button.de-button__color--primary:hover {
-        background-color: #0f0fff;
+        background-color: var(--btn-primary-hover);
       }
       button.de-button.de-button__color--primary:disabled {
-        background-color: #a8a8f0;
+        background-color: var(--btn-primary-disabled);
       }
 
-      button.de-button.de-button__color--secondary{
+      button.de-button.de-button__color--secondary {
         color: var(--btn-secondary-color);
         background-color: var(--btn-secondary-bg);
       }
       button.de-button.de-button__color--secondary:hover {
-        background-color: #808080;
+        background-color: var(--btn-secondary-hover);
       }
       button.de-button.de-button__color--secondary:disabled {
-        background-color: #ccc;
+        background-color: var(--btn-secondary-disabled);
+      }
+
+      button.de-button.de-button__color--success {
+        color: var(--btn-success-color);
+        background-color: var(--btn-success-bg);
+      }
+      button.de-button.de-button__color--success:hover {
+        background-color: var(--btn-success-hover);
+      }
+      button.de-button.de-button__color--success:disabled {
+        background-color: var(--btn-success-disabled);
+      }
+
+      button.de-button.de-button__color--warning{
+        color: var(--btn-warning-color);
+        background-color: var(--btn-warning-bg);
+      }
+      button.de-button.de-button__color--warning:hover {
+        background-color: var(--btn-warning-hover);
+      }
+      button.de-button.de-button__color--warning:disabled {
+        background-color: var(--btn-warning-disabled);
+      }
+
+      button.de-button.de-button__color--error {
+        color: var(--btn-error-color);
+        background-color: var(--btn-error-bg);
+      }
+      button.de-button.de-button__color--error:hover {
+        background-color: var(--btn-error-hover);
+      }
+      button.de-button.de-button__color--error:disabled {
+        background-color: var(--btn-error-disabled);
       }
 
     </style>
@@ -91,9 +140,15 @@
     <h4>Colors</h4>
     <button class="de-button de-button__color--primary">Primary</button>
     <button class="de-button de-button__color--secondary">Secondary</button>
+    <button class="de-button de-button__color--success">Success</button>
+    <button class="de-button de-button__color--warning">Warning</button>
+    <button class="de-button de-button__color--error">Error</button>
 
     <h4>Disabled</h4>
     <button class="de-button de-button__color--primary" disabled>Disabled Primary</button>
     <button class="de-button de-button__color--secondary" disabled>Disabled Secondary</button>
+    <button class="de-button de-button__color--success" disabled >Success</button>
+    <button class="de-button de-button__color--warning" disabled >Warning</button>
+    <button class="de-button de-button__color--error" disabled >Error</button>
   </body>
 </html>
