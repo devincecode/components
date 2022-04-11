@@ -54,6 +54,8 @@
         --btn-error-bg: #d53232;
         --btn-error-hover: #d54140;
         --btn-error-disabled: #d56565;
+        --btn-outline-disabled-bg: #f0f0f0;
+        --btn-disabled-color: #777;
       }
 
       button.de-button.de-button__color--primary {
@@ -108,7 +110,27 @@
         background-color: var(--btn-error-hover);
       }
       button.de-button.de-button__color--error:disabled {
+        color: var(--btn-disabled-color);
         background-color: var(--btn-error-disabled);
+      }
+
+      button.de-button.de-button__outline {
+        border: 1px solid;
+      }
+      button.de-button.de-button__outline.de-button__color--primary {
+        color: initial;
+        border-color: var(--btn-primary-bg);
+        background-color: transparent;
+      }
+      button.de-button.de-button__outline.de-button__color--primary:hover {
+        color: var(--btn-primary-color);
+        border-color: var(--btn-primary-hover);
+        background-color: var(--btn-primary-hover);
+      }
+      button.de-button.de-button__outline.de-button__color--primary:disabled{
+        color: var(--btn-disabled-color);
+        border-color: var(--btn-primary-disabled);
+        background-color: var(--btn-outline-disabled-bg);
       }
 
     </style>
@@ -120,6 +142,7 @@
     <h4>Width</h4>
     <button class="de-button">Default</button>
     <button class="de-button de-button--fit">Fit</button>
+    <br><br>
     <button class="de-button de-button--full">Full</button>
  
     <br><br>
@@ -129,6 +152,13 @@
 
     <br>
     <div style="display: flex;">
+      <button class="de-button de-button--share">Share</button>
+      <button class="de-button de-button--share">Share</button>
+    </div>
+
+    <br>
+    <div style="display: flex;">
+      <button class="de-button de-button--share">Share</button>
       <button class="de-button de-button--share">Share</button>
       <button class="de-button de-button--share">Share</button>
     </div>
@@ -151,5 +181,14 @@
     <button class="de-button de-button__color--success" disabled >Disabled Success</button>
     <button class="de-button de-button__color--warning" disabled >Disabled Warning</button>
     <button class="de-button de-button__color--error" disabled >Disabled Error</button>
+
+    <h4>Outline</h4>
+    <button class="de-button de-button__outline">Outline</button>
+    <button class="de-button de-button__outline" disabled >Outline Disabled</button>
+    <br><br>
+    <button class="de-button de-button__outline de-button__color--primary">Outline Primary</button>
+    <button class="de-button de-button__outline de-button__color--primary" disabled >Outline Primary Disabled</button>
+
+
   </body>
 </html>
