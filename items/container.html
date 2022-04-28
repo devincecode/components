@@ -5,44 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- Import DeItem -->
+    <script type="text/javascript" src="/items/de-item.js"></script>
 </head>
 <body>
-
-    <script>
-        class DeItem extends HTMLElement {
-            constructor() {
-                super();
-            }
-            connectedCallback() {
-                this.attachShadow({mode: 'open'});
-
-                const item = document.createElement('div');
-                item.setAttribute('class', 'item')
-
-                const style = document.createElement('style');
-                style.textContent = `.item {
-                    width: 200px;
-                    height: 300px;
-                    background-color: #ccc;
-                }`
-
-                this.shadowRoot.append(style);
-                this.shadowRoot.append(item);
-            }
-        }
-
-        customElements.define('de-item', DeItem)
-    </script>
-
-
-    <style>
-        .item {
-            width: 200px;
-            height: 300px;
-            background-color: #ccc;
-        }
-    </style>
-
     <h1>de-item-container</h1>
     <style>
         .de-item-container {
@@ -52,23 +19,9 @@
         }
     </style>
     <div class="de-item-container">
-        <de-item></de-item>
-        <de-item></de-item>
-        <de-item></de-item>
-        <de-item></de-item>
-        <de-item></de-item>
-        <de-item></de-item>
-        <de-item></de-item>
-        <de-item></de-item>
-        <de-item></de-item>
-        <de-item></de-item>
-        <de-item></de-item>
-        <de-item></de-item>
-        <de-item></de-item>
-        <de-item></de-item>
-        <de-item></de-item>
-        <de-item></de-item>
-        <de-item></de-item>
+        <de-item></de-item><de-item></de-item><de-item></de-item>
+        <de-item></de-item><de-item></de-item><de-item></de-item>
+        <de-item></de-item><de-item></de-item><de-item></de-item>
     </div>
 </body>
 </html>
